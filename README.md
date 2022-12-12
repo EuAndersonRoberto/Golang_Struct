@@ -1,2 +1,2 @@
 # Golang_Struct
-Estrutura da struct sendo importada para a main.
+Struct and import to main.
