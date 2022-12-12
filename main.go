@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"Golang_Alura_Struct/contas"
+	"Golang_Struct/contas"
 )
 
 func main() {
