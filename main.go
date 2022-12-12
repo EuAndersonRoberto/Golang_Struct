@@ -3,15 +3,22 @@ package main
 import (
 	"fmt"
 	"Golang_Struct/contas"
+	//"Golang_Struct/clientes"
+
 )
 
 func main() {
-	contaDaSilvia := contas.ContaCorrente{Titular: "Silvia", Saldo: 300}
-	contadoGustavo := contas.ContaCorrente{Titular: "Gustavo", Saldo: 100}
-	
-	status := contaDaSilvia.Transferir(200, &contadoGustavo)
-	
-	fmt.Println(status)
-	fmt.Println(contaDaSilvia)
-	fmt.Println(contadoGustavo)
-}
+	contaAnderson := contas.ContaPoupanca{}
+	contaAnderson.Depositar(100)
+
+	fmt.Println(contaAnderson)
+
+	contaAnderson.Depositar(200)
+
+	fmt.Println(contaAnderson)
+
+	contaAnderson.Sacar(50.)
+
+	fmt.Println(contaAnderson.ObterSaldo())
+
+} 
